@@ -4,81 +4,69 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="author" content="Dr Cory W. Dugan">
-<meta name="description" content="The exercise physiology practice map, opened one level deeper: the ESSA standard element or code clause behind every node, in the regulator's own words.">
+<meta name="description" content="A reference map of the accreditation, professional standards, obligations and funding framework governing exercise physiology practice in Australia, with each requirement quoted from its source document.">
 <meta property="og:title" content="Exercise Physiology Practice 2030">
-<meta property="og:description" content="Every node of the map, opened onto the standard element or code clause behind it.">
+<meta property="og:description" content="The accreditation, standards and funding framework for Australian exercise physiology, with every requirement quoted and attributed.">
 <meta property="og:type" content="website">
-<style>
-  :root{
-    color-scheme: light dark;
-    padding-top: env(safe-area-inset-top, 0px);
-    padding-bottom: env(safe-area-inset-bottom, 0px);
-  }
-  html{ -webkit-text-size-adjust:100%; }
-  body{ margin:0; }
-  img{ max-width:100%; }
-  [hidden]{ display:none !important; }
-</style>
 <title>Exercise Physiology Practice 2030</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&family=DM+Serif+Display&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
 <style>
 :root{
-  --grape-800:#352051; --grape-700:#4a2f70; --grape-600:#6b4f9e;
-  --grape-200:#d8cfe7; --grape-100:#ece8f3;
+  color-scheme: light dark;
+  padding-top: env(safe-area-inset-top, 0px);
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+
+  --grape-800:#352051; --grape-600:#6b4f9e; --grape-200:#d8cfe7; --grape-100:#ece8f3;
   --surface:#ffffff; --sunk:#f7f6fa; --raised:#ffffff;
   --fg:#1c1c1e; --fg-strong:#0b0b0c; --fg-muted:#4a4a4f; --fg-subtle:#6e6f75;
   --rule:#e4e5e7; --rule-soft:#eeeef0;
-  --accent:#352051; --stroke:#6b4f9e; --on-accent:#ffffff;
-  --flag:#8a5a00; --flag-bg:#fbf3e4; --flag-rule:#e8d6b0;
-  --serif:"DM Serif Display",Georgia,serif;
-  --sans:"DM Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
-  --mono:"IBM Plex Mono",ui-monospace,SFMono-Regular,monospace;
+  --accent:#352051; --stroke:#6b4f9e;
+  --serif:"DM Serif Display",Georgia,"Times New Roman",serif;
+  --sans:"DM Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,SFMono-Regular,Menlo,monospace;
 }
 @media (prefers-color-scheme:dark){
   :root:not([data-theme="light"]){
     --surface:#0b0b0c; --sunk:#131118; --raised:#17151d;
     --fg:#eceef1; --fg-strong:#ffffff; --fg-muted:#c3c5ca; --fg-subtle:#8e9099;
     --rule:#2a2a2d; --rule-soft:#232328;
-    --accent:#c3b2e0; --stroke:#8a6fb8; --on-accent:#0b0b0c;
+    --accent:#c3b2e0; --stroke:#8a6fb8;
     --grape-100:#1d1830; --grape-200:#4a2f70;
-    --flag:#e0b96a; --flag-bg:#2a2013; --flag-rule:#4a3a1c;
   }
 }
 :root[data-theme="dark"]{
   --surface:#0b0b0c; --sunk:#131118; --raised:#17151d;
   --fg:#eceef1; --fg-strong:#ffffff; --fg-muted:#c3c5ca; --fg-subtle:#8e9099;
   --rule:#2a2a2d; --rule-soft:#232328;
-  --accent:#c3b2e0; --stroke:#8a6fb8; --on-accent:#0b0b0c;
+  --accent:#c3b2e0; --stroke:#8a6fb8;
   --grape-100:#1d1830; --grape-200:#4a2f70;
-  --flag:#e0b96a; --flag-bg:#2a2013; --flag-rule:#4a3a1c;
 }
 
 *{box-sizing:border-box;}
-body{
-  margin:0; background:var(--surface); color:var(--fg);
+html{-webkit-text-size-adjust:100%;}
+body{margin:0; background:var(--surface); color:var(--fg);
   font-family:var(--sans); font-size:16px; line-height:1.55;
-  -webkit-font-smoothing:antialiased;
-}
+  -webkit-font-smoothing:antialiased;}
+img{max-width:100%;}
+[hidden]{display:none !important;}
+a{color:var(--accent);}
+a:focus-visible{outline:2px solid var(--stroke); outline-offset:2px;}
 .wrap{max-width:1040px; margin:0 auto; padding-inline:20px; padding-block:0 80px;}
 
-/* ---------------------------------------------------------------- masthead */
 header.mast{padding-block:44px 22px; border-bottom:2px solid var(--grape-200);}
 .eyebrow{font-family:var(--mono); font-size:11px; letter-spacing:.14em;
   text-transform:uppercase; color:var(--accent); margin:0 0 12px;}
 h1{font-family:var(--serif); font-weight:400; font-size:clamp(34px,6vw,52px);
   line-height:1.04; letter-spacing:-.015em; margin:0; color:var(--fg-strong);
   text-wrap:balance;}
-.standfirst{margin:14px 0 0; font-size:17px; color:var(--fg-muted); max-width:62ch;}
+.standfirst{margin:14px 0 0; font-size:17px; color:var(--fg-muted); max-width:64ch;}
 
-/* ------------------------------------------------------------------ controls */
 .controls{display:flex; gap:12px; flex-wrap:wrap; align-items:center;
   margin-top:22px; padding-block:14px; border-bottom:1px solid var(--rule);
-  position:sticky; top:env(safe-area-inset-top,0px); background:var(--surface);
-  z-index:20;}
-input[type="search"]{
-  flex:1 1 240px; min-width:0; font-family:var(--sans); font-size:15px;
+  position:sticky; top:env(safe-area-inset-top,0px); background:var(--surface); z-index:20;}
+input[type="search"]{flex:1 1 240px; min-width:0; font-family:var(--sans); font-size:15px;
   padding:9px 13px; border:1px solid var(--rule); background:var(--sunk);
   color:var(--fg); border-radius:2px;}
 input[type="search"]:focus-visible{outline:2px solid var(--stroke); outline-offset:1px;}
@@ -90,24 +78,20 @@ button:focus-visible{outline:2px solid var(--stroke); outline-offset:1px;}
 .count{font-family:var(--mono); font-size:12px; color:var(--fg-subtle);
   font-variant-numeric:tabular-nums; margin-left:auto;}
 
-/* --------------------------------------------------------------------- part */
 .part{padding-block:38px 0;}
 .part > h2{font-family:var(--serif); font-weight:400; font-size:30px; margin:0;
   color:var(--fg-strong);}
-.part > p.blurb{margin:8px 0 0; color:var(--fg-muted); max-width:66ch; font-size:15px;}
+.part > p.blurb{margin:8px 0 0; color:var(--fg-muted); max-width:68ch; font-size:15px;}
 
-/* ------------------------------------------------------------------- branch */
 .branch{margin-top:26px; border-top:2px solid var(--accent); padding-top:14px;}
 .branch > h3{font-family:var(--sans); font-weight:700; font-size:18px; margin:0;
   color:var(--accent); letter-spacing:.005em;}
-.branch > p.note{margin:5px 0 0; font-size:14px; color:var(--fg-subtle); max-width:70ch;}
+.branch > p.note{margin:5px 0 0; font-size:14px; color:var(--fg-subtle); max-width:72ch;}
 .leaves{margin-top:12px; display:grid; gap:1px; background:var(--rule-soft);
   border:1px solid var(--rule);}
 
-/* --------------------------------------------------------------------- leaf */
 .leaf{background:var(--raised);}
-.leaf > button.head{
-  all:unset; box-sizing:border-box; display:flex; width:100%; gap:12px;
+.leaf > button.head{all:unset; box-sizing:border-box; display:flex; width:100%; gap:12px;
   align-items:baseline; padding:12px 14px; cursor:pointer;}
 .leaf > button.head:hover{background:var(--sunk);}
 .leaf > button.head:focus-visible{outline:2px solid var(--stroke); outline-offset:-2px;}
@@ -117,9 +101,6 @@ button:focus-visible{outline:2px solid var(--stroke); outline-offset:1px;}
 .leaf .label{flex:1 1 auto; font-size:15px; font-weight:500; color:var(--fg-strong);}
 .leaf .refs{font-family:var(--mono); font-size:11px; color:var(--fg-subtle);
   flex:none; letter-spacing:.02em;}
-.leaf .chip{font-family:var(--mono); font-size:10px; letter-spacing:.06em;
-  text-transform:uppercase; padding:2px 6px; border:1px solid var(--flag-rule);
-  background:var(--flag-bg); color:var(--flag); flex:none;}
 
 .detail{padding:0 14px 16px 38px; background:var(--raised);}
 .detail dl{margin:0; display:grid; gap:12px;}
@@ -128,18 +109,18 @@ button:focus-visible{outline:2px solid var(--stroke); outline-offset:1px;}
   color:var(--accent); letter-spacing:.02em; margin-bottom:3px;}
 .detail dd{margin:0; font-size:14.5px; line-height:1.5; color:var(--fg);}
 .detail dd.quote{font-style:italic; color:var(--fg-muted);}
-.detail .src{font-family:var(--mono); font-size:11px; color:var(--fg-subtle);
-  margin-top:5px;}
-.detail .warn{border-left-color:var(--flag-rule); background:var(--flag-bg);
-  padding:10px 12px; margin-top:2px;}
-.detail .warn dt{color:var(--flag);}
+.detail .src{font-family:var(--mono); font-size:11px; color:var(--fg-subtle); margin-top:5px;}
 
-/* ------------------------------------------------------------------- footer */
 footer{margin-top:52px; padding-top:20px; border-top:1px solid var(--rule);
-  font-size:13.5px; color:var(--fg-subtle); max-width:74ch;}
+  font-size:13.5px; color:var(--fg-subtle); max-width:78ch;}
 footer h4{font-family:var(--mono); font-size:11px; letter-spacing:.14em;
-  text-transform:uppercase; color:var(--fg-subtle); margin:0 0 10px; font-weight:500;}
-footer ul{margin:0; padding-left:18px; display:grid; gap:4px;}
+  text-transform:uppercase; color:var(--fg-subtle); margin:0 0 12px; font-weight:500;}
+footer ol{margin:0; padding-left:20px; display:grid; gap:7px;}
+footer li{padding-left:2px;}
+footer li a{font-weight:500; text-decoration:none; border-bottom:1px solid var(--grape-200);}
+footer li a:hover{border-bottom-color:var(--accent);}
+footer li .pub{color:var(--fg-subtle); font-size:12.5px;}
+footer p{margin:16px 0 0; line-height:1.5;}
 .hidden{display:none !important;}
 @media (prefers-reduced-motion:reduce){*{transition:none !important;}}
 @media (max-width:520px){
@@ -153,9 +134,9 @@ footer ul{margin:0; padding-left:18px; display:grid; gap:4px;}
 
 <div class="wrap">
   <header class="mast">
-    <p class="eyebrow">One level deeper than the map</p>
+    <p class="eyebrow">Exercise and Sports Science Australia</p>
     <h1>Exercise Physiology Practice 2030</h1>
-    <p class="standfirst">Every node of the map, opened. Each one carries the standard element or code clause behind it, in the regulator's own words, and names the document it came from. Where the map's label is not a phrase the standards actually use, it says so rather than pretending.</p>
+    <p class="standfirst">A reference map of the accreditation, professional standards, ongoing obligations and funding framework governing exercise physiology practice in Australia. Each topic opens onto the standard element or code clause that governs it, quoted from the source document and attributed. Version 4.0 of the Professional Standards takes effect on 1 January 2027.</p>
   </header>
 
   <div class="controls">
@@ -169,350 +150,382 @@ footer ul{margin:0; padding-left:18px; display:grid; gap:4px;}
   <main id="map"></main>
 
   <footer>
-    <h4>What this was built from</h4>
-    <ul>
-      <li>Accredited Exercise Physiologist (AEP) Professional Standards for Accreditation, version 4.0, July 2025, in force 1 January 2027, replacing version 2.0 of 2021</li>
-      <li>Accredited Exercise Physiologist (AEP) Professional Standards User Guide, version 3.0, July 2025</li>
-      <li>Accredited Exercise Scientist (AES) Professional Standards and Support Guide</li>
-      <li>Exercise and Sports Science Australia (ESSA) Digital Practice Standards</li>
-      <li>ESSA Code of Professional Conduct and Ethical Practice, version 5, December 2024</li>
-      <li>ESSA Practicum Standards, version 1.3, July 2026</li>
-      <li>ESSA continuing professional development standard, and mandatory declarations standard</li>
-      <li>AEP Rural Generalist standards; AES, AEP, Accredited Sports Scientist and Accredited High Performance Manager scope documents</li>
-      <li>Medicare Benefits Schedule item 10953; Jobs and Skills Australia occupation profile 234915; Commonwealth Prac Payment announcement and factsheet; State of Exercise Physiology Workforce 2026</li>
-    </ul>
-    <p style="margin-top:16px">Every quotation was read out of those documents. Nothing here is paraphrased from memory of them. Built 21 September 2026.</p>
+    <h4>Source documents</h4>
+    <ol id="sources"></ol>
+    <p>Every quotation on this page was taken from the document named beside it. Where a requirement carries a date, that date is the one stated in the source.</p>
+    <p>Quoted standard elements and code clauses remain the property of their issuing bodies and are reproduced here for education, each attributed to its source. Compiled by Dr Cory W. Dugan, September 2026.</p>
   </footer>
 </div>
 
 <script>
+const SOURCES = [
+  {n:"AEP Professional Standards for Accreditation, version 4.0", pub:"Exercise and Sports Science Australia, July 2025, effective 1 January 2027", url:"https://www.essa.org.au/Web/Resources/Standards/aep-professional-standards.aspx"},
+  {n:"AEP Professional Standards User Guide, version 3.0", pub:"Exercise and Sports Science Australia, July 2025. Linked from the same page as the standards.", url:"https://www.essa.org.au/Web/Resources/Standards/aep-professional-standards.aspx"},
+  {n:"AES Professional Standards and Support Guide", pub:"Exercise and Sports Science Australia, standards approved September 2024, support guide August 2024", url:"https://www.essa.org.au/Web/Resources/Standards/aes-professional-standards.aspx"},
+  {n:"Digital Practice Standards and Support Guide", pub:"Exercise and Sports Science Australia, version 1, September 2024", url:"https://www.essa.org.au/Web/Web/Resources/Standards/digital-practice-standards-and-support-guide.aspx"},
+  {n:"Code of Professional Conduct and Ethical Practice, version 5", pub:"Exercise and Sports Science Australia, December 2024", url:"https://www.essa.org.au/Web/Resources/Standards/code-of-professional-conduct-and-ethical-practice.aspx"},
+  {n:"Practicum Standards, version 1.3", pub:"Exercise and Sports Science Australia, July 2026. The file is named for 2023; the version and date are on its cover page.", url:"https://www.essa.org.au/Web/Web/Resources/Standards/Practicum-standards.aspx"},
+  {n:"Continuing Professional Development Standards", pub:"Exercise and Sports Science Australia. Carries the current standard and the future standard effective 1 January 2027.", url:"https://www.essa.org.au/Web/Web/Resources/Standards/cpd-standards.aspx"},
+  {n:"Mandatory declarations", pub:"Exercise and Sports Science Australia. Sets the thresholds for continuing professional development, insurance, recency, first aid and resuscitation.", url:"https://www.essa.org.au/Web/Web/Accreditation/Staying-accredited/Mandatory-declarations.aspx"},
+  {n:"AEP Rural Generalist Professional Standards for Accreditation and Support Guide", pub:"Exercise and Sports Science Australia", url:"https://www.essa.org.au/Web/Web/Resources/Standards/AEP-rural-generalist-professional-standards-accreditation-support-guide.aspx"},
+  {n:"Scopes of practice: AES, AEP, ASpS and AHPM", pub:"Exercise and Sports Science Australia. A separate scope page for each of the four professions.", url:"https://www.essa.org.au/Web/Web/Accreditation/Staying-accredited/scopes-of-practice.aspx"},
+  {n:"Medicare Benefits Schedule item 10953", pub:"Australian Government Department of Health, Disability and Ageing. Item start 1 January 2006, schedule fee updated 1 July 2026.", url:"https://www9.health.gov.au/mbs/fullDisplay.cfm?type=item&q=10953&qt=item"},
+  {n:"ANZSCO 234915 Exercise Physiologists, occupation profile", pub:"Jobs and Skills Australia. ANZSCO has been superseded by the Occupation Standard Classification for Australia.", url:"https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations-anzsco/234915-exercise-physiologists"},
+  {n:"Commonwealth Prac Payment", pub:"Australian Government Department of Education", url:"https://www.education.gov.au/commonwealth-prac-payment-cpp"},
+  {n:"Members of NASRHP", pub:"National Alliance of Self-Regulating Health Professions. Lists Exercise and Sports Science Australia among ten Full Members.", url:"https://nasrhp.org.au/members-of-nasrhp/"},
+  {n:"Unleashing the Potential of our Health Workforce, Scope of Practice Review final report", pub:"Australian Government, published 5 November 2024", url:"https://www.health.gov.au/resources/publications/unleashing-the-potential-of-our-health-workforce-scope-of-practice-review-final-report"},
+  {n:"NDIS pricing arrangements", pub:"National Disability Insurance Agency. The pricing schedule effective 1 July 2026 is the current instrument; the 2025-26 Pricing Arrangements and Price Limits sits below it.", url:"https://www.ndis.gov.au/providers/pricing-and-payments/pricing/pricing-arrangements"},
+  {n:"Support at Home service list", pub:"Australian Government Department of Health, Disability and Ageing. Three contribution categories, fourteen service types, forty-nine services.", url:"https://www.health.gov.au/resources/publications/support-at-home-service-list"},
+  {n:"Exercise physiologists, provider information", pub:"Department of Veterans' Affairs, last updated 19 August 2026", url:"https://www.dva.gov.au/providers/information-for-dental-psychology-allied-health-providers/exercise-physiologists"}
+];
+
 const DATA = [
 {part:"Part 1: The Regulatory System",
- blurb:"What Exercise and Sports Science Australia requires of you, and when each requirement starts.",
+ blurb:"The accreditation framework, the standards that define competence, the obligations that continue after qualification, and the schemes that fund the work.",
  branches:[
   {name:"Accreditation and scope",
-   note:"Five credentials. The line between them is clinical exercise prescription, not delivery.",
+   note:"Five credentials issued by Exercise and Sports Science Australia. The boundary between exercise science and exercise physiology is the independent prescription of clinical exercise.",
    leaves:[
     {label:"Accredited Exercise Scientist (AES)", refs:"AES scope",
      items:[
-      {t:"Who it is for", d:"Non-clinical and apparently healthy populations, to improve health, fitness, wellbeing and performance, and to assist injury and chronic disease prevention."},
-      {t:"Can do independently", d:"Pre-exercise screening, functional movement and fitness assessment, and exercise coaching for healthy and athletic populations."},
-      {t:"Cannot do", d:"Cannot independently prescribe clinical exercise for the treatment or management of a diagnosed condition, injury or disability. May deliver such an intervention when a qualified clinician has prescribed it."},
+      {t:"Population", d:"Non-clinical and apparently healthy populations, to improve health, fitness, wellbeing and performance, and to assist injury and chronic disease prevention."},
+      {t:"Independent practice", d:"Pre-exercise screening, functional movement and fitness assessment, and exercise coaching for healthy and athletic populations."},
+      {t:"Boundary", d:"Cannot independently prescribe clinical exercise for the treatment or management of a diagnosed condition, injury or disability. May deliver such an intervention where a qualified clinician has prescribed it."},
       {t:"Practicum", d:"140 hours minimum."}],
-     src:"ESSA Accredited Exercise Scientist scope; Practicum Standards version 1.3"},
+     src:"AES scope; Practicum Standards version 1.3"},
     {label:"Accredited Exercise Physiologist (AEP)", refs:"AEP scope",
      items:[
-      {t:"Who it is for", d:"Clients living with acute, sub-acute or chronic conditions, injury or disability, across the full health spectrum."},
-      {t:"Can do independently", d:"Designs, prescribes, delivers, adapts and evaluates clinical exercise interventions in its own right, across cardiovascular, metabolic, neurological, musculoskeletal, respiratory, cancer, kidney, mental health and aged care."},
-      {t:"Cannot do", d:"Cannot provide medical or diagnostic diagnoses, such as pathology or medical imaging diagnoses, and cannot deliver outside individual scope, training or experience."},
+      {t:"Population", d:"Clients living with acute, sub-acute or chronic conditions, injury or disability, across the full health spectrum."},
+      {t:"Independent practice", d:"Designs, prescribes, delivers, adapts and evaluates clinical exercise interventions in its own right, across cardiovascular, metabolic, neurological, musculoskeletal, respiratory, cancer, kidney, mental health and aged care."},
+      {t:"Boundary", d:"Cannot provide medical or diagnostic diagnoses, such as pathology or medical imaging diagnoses, and cannot deliver outside individual scope, training or experience."},
       {t:"Practicum", d:"360 hours minimum."}],
-     src:"ESSA Accredited Exercise Physiologist scope; Practicum Standards version 1.3"},
+     src:"AEP scope; Practicum Standards version 1.3"},
     {label:"Accredited Sports Scientist (ASpS), Level 1", refs:"ASpS scope",
      items:[
-      {t:"Who it is for", d:"Athletes, coaches and teams."},
-      {t:"Can do", d:"Expert advice and performance support."},
-      {t:"Practicum", d:"360 hours, with a minimum 120 hours of direct service delivery completed separately from other discipline hours, and simulated learning capped at 40 hours. The 360 attaches to Level 1 specifically; ESSA also offers Level 2."}],
-     src:"ESSA Accredited Sports Scientist scope; Practicum Standards version 1.3"},
+      {t:"Population", d:"Athletes, coaches and teams."},
+      {t:"Independent practice", d:"Expert advice and performance support."},
+      {t:"Practicum", d:"360 hours, including a minimum 120 hours of direct service delivery completed separately from other discipline hours, and simulated learning capped at 40 hours. These figures attach to Level 1; a Level 2 credential also exists."}],
+     src:"ASpS scope; Practicum Standards version 1.3"},
     {label:"Accredited High Performance Manager (AHPM)", refs:"AHPM scope",
      items:[
-      {t:"Who it is for", d:"Elite and professional sport."},
-      {t:"Can do", d:"Leads performance support, sports science and sports medicine staff."},
+      {t:"Setting", d:"Elite and professional sport."},
+      {t:"Role", d:"Leads performance support, sports science and sports medicine staff."},
       {t:"Practicum", d:"Not specified in the Practicum Standards."}],
-     src:"ESSA Accredited High Performance Manager scope"},
-    {label:"AEP Rural Generalist (RG)", refs:"RG standards",
+     src:"AHPM scope"},
+    {label:"AEP Rural Generalist", refs:"RG pathway",
      items:[
-      {t:"What it is", d:"An Accredited Exercise Physiologist who extends the core competencies to deliver clinical and non-clinical services in regional, rural and remote settings, where specialised equipment and referral pathways are limited and the clinician works at the outer limits of full scope."},
-      {t:"What it requires", d:"Builds on the AEP Professional Standards for Accreditation, and adds three equal focus standards: 1.0 Prevention and Client Self-Management, 2.0 Chronic Conditions, 3.0 Mental Health."},
+      {t:"Definition", d:"An Accredited Exercise Physiologist who extends the core competencies to deliver clinical and non-clinical services in regional, rural and remote settings, where specialised equipment and referral pathways are limited and the clinician works at the outer limits of full scope."},
+      {t:"Basis", d:"Builds on the AEP Professional Standards for Accreditation and adds three equal focus standards: 1.0 Prevention and Client Self-Management, 2.0 Chronic Conditions, 3.0 Mental Health."},
       {t:"Tiers", d:"Level 1 foundation training, and Level 2 autonomous practice."}],
-     src:"ESSA AEP Rural Generalist standards"}]},
+     src:"AEP Rural Generalist pathway"}]},
 
   {name:"Professional Standards 2027",
-   note:"Version 4.0, dated July 2025, takes effect 1 January 2027 and replaces version 2.0 of 2021. Four standards, and one new element that changes the most.",
+   note:"Version 4.0, dated July 2025, takes effect on 1 January 2027 and replaces version 2.0 of 2021. Four standards, and three new elements.",
    leaves:[
     {label:"Standard 1: Professional Practice", refs:"1.2.1 to 1.2.15",
      items:[
-      {t:"1.2.1", d:"Practice within the AEP and individual scopes of practice, ESSA Code of Professional Conduct and Ethical Practice, and other legislation, regulations, and standards addressing privacy, confidentiality, data security, ongoing informed consent, professional boundaries, and record-keeping.", q:1},
-      {t:"1.2.15", d:"Evaluate national and state legal, regulatory, and industrial instruments associated with AEP practice, and apply this knowledge to advocate for equitable employment conditions.", q:1},
-      {t:"1.2.11", d:"Develop reflective practices through self-reflection, seeking and engaging with feedback from supervisors, colleagues and clients, critically evaluating service delivery and outcomes, and engaging in ongoing learning.", q:1}],
+      {t:"Element 1.2.1", d:"Practice within the AEP and individual scopes of practice, ESSA Code of Professional Conduct and Ethical Practice, and other legislation, regulations, and standards addressing privacy, confidentiality, data security, ongoing informed consent, professional boundaries, and record-keeping.", q:1},
+      {t:"Element 1.2.11", d:"Develop reflective practices through self-reflection, seeking and engaging with feedback from supervisors, colleagues and clients, critically evaluating service delivery and outcomes, and engaging in ongoing learning.", q:1},
+      {t:"Element 1.2.15", d:"Evaluate national and state legal, regulatory, and industrial instruments associated with AEP practice, and apply this knowledge to advocate for equitable employment conditions.", q:1}],
      src:"AEP Professional Standards version 4.0"},
     {label:"Standard 2: Foundational Knowledge", refs:"2.2.x",
      items:[
-      {t:"2.2.1", d:"Apply integrated knowledge of anatomy, physiology, pathophysiology, biomechanics, and behaviour change to inform clinical decision making and person-centred care approaches.", q:1},
-      {t:"2.2.5", d:"Analyse research findings to develop evidence-informed and safe recommendations and exercise interventions.", q:1},
-      {t:"2.2.6", d:"Examine the primary, secondary and tertiary health care environment and the roles of AEPs within established and emerging practice settings, considering multidisciplinary, interdisciplinary and transdisciplinary approaches.", q:1}],
+      {t:"Element 2.2.1", d:"Apply integrated knowledge of anatomy, physiology, pathophysiology, biomechanics, and behaviour change to inform clinical decision making and person-centred care approaches.", q:1},
+      {t:"Element 2.2.5", d:"Analyse research findings to develop evidence-informed and safe recommendations and exercise interventions.", q:1},
+      {t:"Element 2.2.6", d:"Examine the primary, secondary and tertiary health care environment and the roles of AEPs within established and emerging practice settings, considering multidisciplinary, interdisciplinary and transdisciplinary approaches.", q:1}],
      src:"AEP Professional Standards version 4.0"},
     {label:"Standard 3: Screening, Assessment and Client Management", refs:"3.2.x",
      items:[
-      {t:"3.2.1", d:"Apply appropriate screening processes, including infection control, to evaluate, stratify, and manage risk for participation in assessments and interventions with consideration for the full health spectrum.", q:1},
-      {t:"3.2.2", d:"Formulate safe, inclusive and effective assessments and communication strategies to collect relevant information about social and cultural determinants of the client's health, history, needs, preferences, barriers, facilitators, and goals.", q:1},
-      {t:"3.2.8", d:"Distinguish when client needs are outside of scope or competence and take appropriate, timely action to effectively engage or refer to other professionals.", q:1}],
+      {t:"Element 3.2.1", d:"Apply appropriate screening processes, including infection control, to evaluate, stratify, and manage risk for participation in assessments and interventions with consideration for the full health spectrum.", q:1},
+      {t:"Element 3.2.2", d:"Formulate safe, inclusive and effective assessments and communication strategies to collect relevant information about social and cultural determinants of the client's health, history, needs, preferences, barriers, facilitators, and goals.", q:1},
+      {t:"Element 3.2.8", d:"Distinguish when client needs are outside of scope or competence and take appropriate, timely action to effectively engage or refer to other professionals.", q:1}],
      src:"AEP Professional Standards version 4.0"},
     {label:"Standard 4: Exercise Prescription and Delivery", refs:"4.2.x",
      items:[
-      {t:"4.2.2", d:"Deliver, monitor and adapt safe and effective movement, physical activity, and exercise-based interventions for clients with complex presentations, including those with acute, sub-acute, chronic health conditions and multi-morbidity.", q:1},
-      {t:"4.2.3", d:"Formulate and apply strategies to manage risk, evaluate progress, and adapt recommendations and interventions based on needs and measured outcomes.", q:1},
-      {t:"4.2.4", d:"Create and apply effective communication strategies to educate and engage clients in informed and shared decision-making about purpose, benefits, risks, options, and costs for proposed interventions, expected outcomes, and strategies for future prevention.", q:1}],
+      {t:"Element 4.2.2", d:"Deliver, monitor and adapt safe and effective movement, physical activity, and exercise-based interventions for clients with complex presentations, including those with acute, sub-acute, chronic health conditions and multi-morbidity.", q:1},
+      {t:"Element 4.2.3", d:"Formulate and apply strategies to manage risk, evaluate progress, and adapt recommendations and interventions based on needs and measured outcomes.", q:1},
+      {t:"Element 4.2.4", d:"Create and apply effective communication strategies to educate and engage clients in informed and shared decision-making about purpose, benefits, risks, options, and costs for proposed interventions, expected outcomes, and strategies for future prevention.", q:1}],
      src:"AEP Professional Standards version 4.0"},
-    {label:"Digital practice integration", refs:"1.2.3 NEW",
+    {label:"Digital practice integration", refs:"1.2.3, new",
      items:[
-      {t:"1.2.3, new in version 4.0", d:"Integrate the ESSA Digital Practice Standards to ensure safe, ethical, and high-quality digital service delivery, inclusive of risk management, informed consent, safety procedures, quality assurance, and data protection.", q:1},
-      {t:"Why it matters", d:"This one element is what turns the Digital Practice Standards from guidance into part of accreditation, from 1 January 2027."},
-      {t:"1.2.4", d:"Practice in person and via telepractice, selecting and utilising appropriate technologies, tools, and delivery modes to meet client needs and ensure effective service provision.", q:1}],
+      {t:"Element 1.2.3", d:"Integrate the ESSA Digital Practice Standards to ensure safe, ethical, and high-quality digital service delivery, inclusive of risk management, informed consent, safety procedures, quality assurance, and data protection.", q:1},
+      {t:"Effect", d:"This element brings the Digital Practice Standards inside the accreditation framework from 1 January 2027, where they previously sat alongside it as guidance."},
+      {t:"Element 1.2.4", d:"Practice in person and via telepractice, selecting and utilising appropriate technologies, tools, and delivery modes to meet client needs and ensure effective service provision.", q:1}],
      src:"AEP Professional Standards version 4.0"}]},
 
   {name:"Practicum and ongoing obligations",
-   note:"Hours before you qualify, then obligations running on three different clocks after you do.",
+   note:"Supervised hours required for accreditation, and the annual, three-yearly and five-yearly obligations that follow it. Practicum figures are from version 1.3 of the Practicum Standards, dated July 2026.",
    leaves:[
-    {label:"AES: 140 total hours", refs:"Practicum v1.3",
+    {label:"AES practicum: 140 hours", refs:"Practicum v1.3",
      items:[
-      {t:"Of which", d:"At least 80 hours in exercise assessment, prescription and delivery for NON-CLINICAL clients. Up to 60 hours in other activities inside AES scope."},
-      {t:"Supervision", d:"At least 80 hours supervised by someone holding a bachelor level degree or higher in exercise and sports science, or an Australian Strength and Conditioning Association Level 2 qualification for strength and conditioning placements, or a bachelor-qualified Physical Education teacher for school placements. Up to 60 hours by an externally recognised qualified professional under a documented oversight plan."},
+      {t:"Composition", d:"At least 80 hours in exercise assessment, prescription and delivery for non-clinical clients. Up to 60 hours in other activities inside AES scope."},
+      {t:"Supervision", d:"At least 80 hours supervised by a person holding a bachelor level degree or higher in exercise and sports science, an Australian Strength and Conditioning Association Level 2 qualification for strength and conditioning placements, or a bachelor-qualified Physical Education teacher for school placements. Up to 60 hours may be supervised by an externally recognised qualified professional under a documented oversight plan."},
       {t:"Simulated learning", d:"Capped at 15 hours."}],
-     src:"ESSA Practicum Standards version 1.3, July 2026"},
-    {label:"AEP: 360 total hours", refs:"Practicum v1.3",
+     src:"Practicum Standards version 1.3"},
+    {label:"AEP practicum: 360 hours", refs:"Practicum v1.3",
      items:[
-      {t:"Of which", d:"At least 200 hours across the AEP core areas of practice. The remaining 160 hours anywhere in AEP scope, with a maximum of 100 in niche or emerging areas."},
-      {t:"Supervision", d:"At least 200 hours by an Accredited Exercise Physiologist directly or under documented oversight. Up to 160 hours by an externally recognised qualified professional relevant to the client condition."},
-      {t:"Simulated learning", d:"Capped at 40 hours."},
-      {t:"Core areas of practice", d:"Include disabilities, mental illnesses and health, healthy ageing and age-related conditions, and pre and post-surgical rehabilitation."}],
-     src:"ESSA Practicum Standards version 1.3, July 2026"},
-    {label:"What counts, and what does not, as a student", refs:"Practicum v1.3",
+      {t:"Composition", d:"At least 200 hours across the AEP core areas of practice. The remaining 160 hours anywhere within AEP scope, with a maximum of 100 hours in niche or emerging areas."},
+      {t:"Core areas of practice", d:"Include disabilities, mental illnesses and health, healthy ageing and age-related conditions, and pre and post-surgical rehabilitation."},
+      {t:"Supervision", d:"At least 200 hours supervised by an Accredited Exercise Physiologist, directly or under documented oversight. Up to 160 hours may be supervised by an externally recognised qualified professional relevant to the client condition."},
+      {t:"Simulated learning", d:"Capped at 40 hours."}],
+     src:"Practicum Standards version 1.3"},
+    {label:"What counts as practicum activity", refs:"Practicum v1.3",
      items:[
-      {t:"Counts", d:"Hours must involve active student engagement, not observation alone. Developing mock reports, taking your own case notes, and undertaking assessment and treatment tasks outside a third party funded consultation all count."},
-      {t:"Does not count", d:"You cannot provide any part of a service billed under Medicare, the Department of Veterans' Affairs, or private health insurance. Exercise science students may not undertake exercise assessment or prescription for clinical clients at all."},
-      {t:"The one exception", d:"You may participate in compensable disability scheme sessions where the client gives informed consent and the student arrangement is written into the formal service agreement. You may observe a billed session with informed consent obtained beforehand."}],
-     src:"ESSA Practicum Standards version 1.3, July 2026"},
-    {label:"20 continuing professional development points a year", refs:"CPD standard",
+      {t:"Included", d:"Hours must involve active student engagement rather than observation alone. Developing mock reports, taking case notes, and undertaking assessment and treatment tasks outside a third party funded consultation all count."},
+      {t:"Excluded", d:"A student cannot provide any part of a service billed under Medicare, the Department of Veterans' Affairs, or private health insurance. Exercise science students cannot undertake exercise assessment or prescription for clinical clients."},
+      {t:"Conditional", d:"A student may participate in compensable disability scheme sessions where the client gives informed consent and the student arrangement is written into the formal service agreement, and may observe a billed session where informed consent is obtained beforehand."}],
+     src:"Practicum Standards version 1.3"},
+    {label:"Continuing professional development", refs:"20 points a year",
      items:[
-      {t:"The quantity", d:"A minimum of 20 points per year, accrued within each annual cycle running 1 January to 31 December. Points do not carry forward."},
-      {t:"The split", d:"At least 15 points from the Further Education category. No more than 5 from Self-Education and Professional Contributions."}],
-     src:"ESSA continuing professional development standard"},
-    {label:"Professional indemnity insurance", refs:"Declarations",
+      {t:"Quantity", d:"A minimum of 20 points per year, accrued within each annual cycle running 1 January to 31 December. Points do not carry forward."},
+      {t:"Composition", d:"At least 15 points from the Further Education category, and no more than 5 points from Self-Education and Professional Contributions."}],
+     src:"Continuing professional development requirements"},
+    {label:"Professional indemnity insurance", refs:"Annual",
      items:[
-      {t:"The requirement", d:"Current cover across your full scope of practice, held at all times, and declared annually at renewal. Cover must explicitly extend to digital service provision if you deliver any."}],
-     src:"ESSA mandatory declarations standard; Digital Practice Standards, Standard 5"},
-    {label:"First aid and resuscitation currency", refs:"HLTAID009 / 011",
+      {t:"Requirement", d:"Current cover across the full scope of practice, held at all times and declared annually at renewal. Cover must explicitly extend to digital service provision where any is delivered."}],
+     src:"Accreditation renewal and mandatory declarations; Digital Practice Standards, Standard 5"},
+    {label:"First aid and resuscitation currency", refs:"HLTAID009, HLTAID011",
      items:[
       {t:"Every 12 months", d:"Statement of Attainment for cardiopulmonary resuscitation, HLTAID009."},
-      {t:"Every 3 years", d:"Statement of Attainment for first aid, HLTAID011. This is the only obligation on a different clock from everything else, and it is the one people forget."},
-      {t:"The condition on both", d:"Both are conditioned on providing direct in-person physical activity or exercise services, not on holding accreditation alone."}],
-     src:"ESSA mandatory declarations standard"},
-    {label:"Recency of practice", refs:"Recency",
+      {t:"Every 3 years", d:"Statement of Attainment for first aid, HLTAID011."},
+      {t:"Condition", d:"Both requirements apply where direct in-person physical activity or exercise services are provided, rather than on holding accreditation alone."}],
+     src:"Accreditation renewal and mandatory declarations"},
+    {label:"Recency of practice", refs:"5-year window",
      items:[
-      {t:"The window", d:"A minimum of 1,000 practice hours across every five-year rolling window, with at least 200 hours in the last three years, and no more than two consecutive years without practice."},
-      {t:"If you fall short", d:"Met through practice hours, or through a return to practice program."}],
-     src:"ESSA mandatory declarations standard, recency of practice requirements"},
-    {label:"Keeping the paper", refs:"7 years / 7 days",
+      {t:"Requirement", d:"A minimum of 1,000 practice hours across every five-year rolling window, with at least 200 hours in the most recent three years, and no more than two consecutive years without practice."},
+      {t:"How it is met", d:"Through practice hours, or through a return to practice program."}],
+     src:"Accreditation renewal and mandatory declarations"},
+    {label:"Records and notification", refs:"7 years, 7 days",
      items:[
-      {t:"Retention", d:"Portfolios of evidence for all continuing professional development activities and mandatory declarations must be maintained for a minimum of seven years."},
-      {t:"Notification", d:"You must notify ESSA within seven business days of any change to criminal history, or ethical and disciplinary history."}],
-     src:"ESSA mandatory declarations standard"}]},
+      {t:"Retention", d:"Portfolios of evidence for all continuing professional development activities and mandatory declarations are maintained for a minimum of seven years."},
+      {t:"Notification", d:"Any change to criminal history, or to ethical and disciplinary history, is notified to ESSA within seven business days."}],
+     src:"Accreditation renewal and mandatory declarations"}]},
 
   {name:"Regulation and funding",
-   note:"Nobody registers you. Understanding who does hold you to account, and who pays for what you do, is half of professional practice.",
+   note:"Exercise physiology sits outside the national registration scheme. These are the instruments that hold the profession to account, and the schemes that fund its services.",
    leaves:[
     {label:"Self-regulation and NASRHP", refs:"NASRHP",
      items:[
-      {t:"What it is", d:"The National Alliance of Self-Regulating Health Professions, the peak national body and benchmarking framework for self-regulating health professions in Australia. Exercise and Sports Science Australia is a Full Member."},
-      {t:"What membership means", d:"That ESSA's self-regulatory framework, including its professional standards, mandatory declarations, continuing professional development and recency of practice requirements, meets benchmarks closely aligned with those the Australian Health Practitioner Regulation Agency sets for nationally registered professions."},
-      {t:"What it is not", d:"Exercise physiology is not in the National Registration and Accreditation Scheme that covers physiotherapy, nursing and psychology."},
-      {t:"What is under review", d:"The Scope of Practice Review, delivered to Government on 30 October 2024, named exercise physiologists in its indicative priority list of self-regulated professions for regulatory reform."},
-      {t:"The other recognition problem", d:"Occupation code 234915 files exercise physiologists under Other Natural and Physical Science Professionals, beside meteorologists and physicists, rather than among the health professions."}],
-     src:"NASRHP; Unleashing the Potential of our Health Workforce, final report; Jobs and Skills Australia occupation profile"},
-    {label:"ESSA Code of Professional Conduct", refs:"v5, Dec 2024",
+      {t:"The body", d:"The National Alliance of Self-Regulating Health Professions is the peak national body and benchmarking framework for self-regulating health professions in Australia. Exercise and Sports Science Australia is a Full Member."},
+      {t:"What membership signifies", d:"That ESSA's self-regulatory framework, including its professional standards, mandatory declarations, continuing professional development and recency of practice requirements, meets benchmarks closely aligned with those the Australian Health Practitioner Regulation Agency applies to nationally registered professions."},
+      {t:"What it is not", d:"Exercise physiology is not within the National Registration and Accreditation Scheme that covers physiotherapy, nursing and psychology."},
+      {t:"Under review", d:"The Scope of Practice Review, delivered to Government on 30 October 2024, named exercise physiologists in its indicative priority list of self-regulated professions for regulatory reform."},
+      {t:"Occupational classification", d:"ANZSCO code 234915 classifies exercise physiologists under Other Natural and Physical Science Professionals rather than among the health professions. ANZSCO has since been superseded by the Occupation Standard Classification for Australia."}],
+     src:"NASRHP; Scope of Practice Review final report; Jobs and Skills Australia occupation profile"},
+    {label:"Code of Professional Conduct", refs:"v5, Dec 2024",
      items:[
-      {t:"2.6 Scope and competency", d:"You must not make false or misleading claims about qualifications, accreditation status, competencies or scope, and must not provide services outside your experience, training or qualifications."},
-      {t:"2.5 and 2.7 Advertising", d:"Comply with advertising, consumer, privacy, anti-discrimination and employment law. Do not make false or misleading claims about services, products or expected clinical outcomes. Offer a service only where there is a reasonable expectation the client will benefit. Do not accept or offer financial inducements in referral arrangements."},
+      {t:"Clause 2.6, scope and competency", d:"Prohibits false or misleading claims about qualifications, accreditation status, competencies or scope, and prohibits providing services outside individual experience, training or qualifications."},
+      {t:"Clauses 2.5 and 2.7, advertising", d:"Require compliance with advertising, consumer, privacy, anti-discrimination and employment law. Prohibit false or misleading claims about services, products or expected clinical outcomes. A service is offered only where there is a reasonable expectation the client will benefit. Financial inducements in referral arrangements are prohibited in both directions."},
       {t:"Use of the ESSA logo", d:"Requires ESSA's permission."}],
-     src:"ESSA Code of Professional Conduct and Ethical Practice, version 5, December 2024"},
+     src:"Code of Professional Conduct and Ethical Practice version 5"},
     {label:"Mandatory declarations", refs:"Annual",
      items:[
-      {t:"What you declare", d:"Criminal history, ethical and disciplinary history, and the accuracy of what you submit. A legally binding declaration made annually at renewal."},
-      {t:"Plus", d:"An annual binding declaration to comply with the Code of Professional Conduct and Ethical Practice. There are no exemptions from the declarations standard."}],
-     src:"ESSA mandatory declarations standard"},
-    {label:"Medicare, the disability scheme and veterans", refs:"MBS 10953",
+      {t:"Content", d:"Criminal history, ethical and disciplinary history, and the accuracy of what is submitted, made as a legally binding declaration annually at renewal."},
+      {t:"Also declared", d:"An annual binding declaration to comply with the Code of Professional Conduct and Ethical Practice. No exemptions from the declarations standard exist."}],
+     src:"Accreditation renewal and mandatory declarations"},
+    {label:"Medicare, disability and veterans funding", refs:"MBS 10953",
      items:[
-      {t:"Medicare", d:"Item 10953 pays a schedule fee of 74.55 dollars. A patient receives a maximum of five allied health services in a calendar year, and that allocation is SHARED across every allied health profession on their plan."},
-      {t:"Disability scheme", d:"The hourly price limit for exercise physiology fell from 166.99 to 161.99 dollars on 1 July 2026, benchmarked against Medicare and private health insurance rates."},
-      {t:"Telehealth", d:"Funded at the same price as face to face on that schedule, and also permitted under Support at Home and through standing Medicare items 93000 and 93013."},
-      {t:"Support at Home", d:"Operating from 1 November 2025, exercise physiologist sits under CLINICAL supports, which government funds in full with no participant contribution, while chiropractic and remedial massage sit where the participant must contribute."},
+      {t:"Medicare", d:"Item 10953 carries a schedule fee of 74.55 dollars. A patient receives a maximum of five allied health services in a calendar year, and that allocation is shared across every allied health profession on their plan."},
+      {t:"Disability scheme", d:"The hourly price limit for exercise physiology moved from 166.99 to 161.99 dollars on 1 July 2026, benchmarked against Medicare and private health insurance rates."},
+      {t:"Telehealth", d:"Funded at the same price as face to face delivery on that schedule, and also permitted under Support at Home and through Medicare items 93000 and 93013."},
+      {t:"Support at Home", d:"Operating from 1 November 2025. Exercise physiologist sits under clinical supports, which government funds in full with no participant contribution, while chiropractic and remedial massage sit in a category requiring a participant contribution."},
       {t:"Veterans", d:"The Department of Veterans' Affairs requires ESSA accreditation and registration with Services Australia, funds up to twelve sessions per referral cycle, and permits no gap fee."}],
-     src:"Medicare Benefits Schedule item 10953; disability scheme pricing arrangements 1 July 2026 and Annual Pricing Review June 2026; Support at Home service list; Department of Veterans' Affairs provider page"},
-    {label:"Clinical documentation", refs:"1.2.2 / 2.9.4",
+     src:"MBS item 10953; NDIS Pricing Arrangements and Price Limits; Support at Home service list; Department of Veterans' Affairs"},
+    {label:"Clinical documentation", refs:"1.2.2, Code 2.9",
      items:[
-      {t:"1.2.2", d:"Develop effective, concise, respectful, and informative clinical documentation, including case notes and reports, and apply appropriate record keeping practices.", q:1},
-      {t:"Code 2.9.4", d:"keep accurate, clear, respectful, timely, up-to-date records documenting services.", q:1},
-      {t:"Code 2.9.5", d:"store records securely and for the appropriate period of time required by the law or relevant authority.", q:1}],
+      {t:"Element 1.2.2", d:"Develop effective, concise, respectful, and informative clinical documentation, including case notes and reports, and apply appropriate record keeping practices.", q:1},
+      {t:"Code clause 2.9.4", d:"keep accurate, clear, respectful, timely, up-to-date records documenting services.", q:1},
+      {t:"Code clause 2.9.5", d:"store records securely and for the appropriate period of time required by the law or relevant authority.", q:1}],
      src:"AEP Professional Standards version 4.0; Code of Professional Conduct version 5"},
-    {label:"Informed consent", refs:"1.2.1 / 3.2.x",
+    {label:"Informed consent", refs:"1.2.1, Code 3.2",
      items:[
-      {t:"1.2.1", d:"Requires practice within standards addressing privacy, confidentiality, data security and ongoing informed consent."},
-      {t:"Code 3.2.1 to 3.2.6", d:"Explain services, risks and benefits, ensure consent is voluntary and recorded, and uphold the client's right to withdraw consent at any time."},
-      {t:"Code 2.9.1", d:"Explain data processes and obtain informed consent to those processes before proceeding with the service."}],
+      {t:"Element 1.2.1", d:"Requires practice within standards addressing privacy, confidentiality, data security and ongoing informed consent."},
+      {t:"Code clauses 3.2.1 to 3.2.6", d:"Require that services, risks and benefits are explained, that consent is voluntary and recorded, and that the client's right to withdraw consent at any time is upheld."},
+      {t:"Code clause 2.9.1", d:"Requires that data processes are explained and informed consent to those processes obtained before proceeding with the service."}],
      src:"AEP Professional Standards version 4.0; Code of Professional Conduct version 5"}]},
 
-  {name:"What changes, 2026 to 2027",
-   note:"Everything here lands on the cohort starting this degree, not on the year ahead of them.",
+  {name:"Changes taking effect, 2026 to 2027",
+   note:"Changes to the standards, the funding and the placement framework, with the date each takes effect.",
    leaves:[
-    {label:"Trauma-informed care", refs:"1.2.8 NEW",
+    {label:"Trauma-informed care", refs:"1.2.8, new",
      items:[
-      {t:"1.2.8", d:"Apply person-centred approaches that foster psychologically safe environments, including trauma-informed care, to ensure practices are inclusive and responsive to individual needs and experiences.", q:1},
-      {t:"Status", d:"One of three additions in version 4.0, in force 1 January 2027."}],
+      {t:"Element 1.2.8", d:"Apply person-centred approaches that foster psychologically safe environments, including trauma-informed care, to ensure practices are inclusive and responsive to individual needs and experiences.", q:1},
+      {t:"Effective", d:"1 January 2027, as one of three additions in version 4.0."}],
      src:"AEP Professional Standards version 4.0"},
-    {label:"Sustainable healthcare", refs:"1.2.14 NEW",
+    {label:"Sustainable healthcare", refs:"1.2.14, new",
      items:[
-      {t:"Status", d:"An addition in version 4.0, in force 1 January 2027, alongside trauma-informed care and the Digital Practice Standards element."}],
+      {t:"Effective", d:"1 January 2027, as one of three additions in version 4.0, alongside trauma-informed care and the Digital Practice Standards element."}],
      src:"AEP Professional Standards version 4.0"},
-    {label:"Paid placement", refs:"1 Jul 2027",
+    {label:"Paid student placement", refs:"1 Jul 2027",
      items:[
-      {t:"When", d:"The Commonwealth Prac Payment extends to exercise physiology on 1 July 2027. Exercise physiology was added to the scheme on 23 July 2026."},
-      {t:"How much", d:"338.60 dollars a week in 2026, benchmarked to the single Austudy rate and indexed each 1 January. It is an eligibility-tested payment to students, not a universal payment for placement."}],
-     src:"Commonwealth Prac Payment announcement and factsheet"},
+      {t:"Effective", d:"The Commonwealth Prac Payment extends to exercise physiology on 1 July 2027. Exercise physiology was added to the scheme on 23 July 2026."},
+      {t:"Rate", d:"338.60 dollars a week in 2026, benchmarked to the single Austudy rate and indexed each 1 January. It is an eligibility-tested payment made to students rather than a universal payment attached to placement."}],
+     src:"Commonwealth Prac Payment"},
     {label:"Trans-Tasman agreement", refs:"Jul 2026",
      items:[
-      {t:"What", d:"An agreement signed with New Zealand in July 2026."}],
-     src:"ESSA announcements"},
-    {label:"Digital Practice Standards become mandatory", refs:"1.2.3",
+      {t:"Signed", d:"An agreement with New Zealand, signed in July 2026."}],
+     src:"Exercise and Sports Science Australia announcements"},
+    {label:"Digital Practice Standards become mandatory", refs:"1 Jan 2027",
      items:[
-      {t:"The mechanism", d:"Element 1.2.3 of version 4.0 requires integration of the ESSA Digital Practice Standards, so from 1 January 2027 they stop being guidance and become part of accreditation."},
-      {t:"Also under review", d:"The practicum framework itself, with expressions of interest for the review working group having closed on 18 September 2026."}],
+      {t:"Mechanism", d:"Element 1.2.3 of version 4.0 requires integration of the ESSA Digital Practice Standards, bringing them inside the accreditation framework from 1 January 2027."},
+      {t:"Also under review", d:"The practicum framework itself. Expressions of interest for the review working group closed on 18 September 2026."}],
      src:"AEP Professional Standards version 4.0; ESSA practicum framework review"}]}
 ]},
 
 {part:"Part 2: Professional Abilities",
- blurb:"The capabilities the map names, mapped onto the elements a panel or a supervisor would actually assess you against. Where the map's phrase is not one the standards use, that is marked rather than smoothed over.",
+ blurb:"The capabilities defined across the Professional Standards, grouped by the kind of judgement each requires, and mapped to the elements and clauses that govern them.",
  branches:[
   {name:"Communication and partnership",
-   note:"The intervention only works if the person in front of you takes it home, and the referrer can act on what you send.",
+   note:"Elements governing how information is gathered from clients, how decisions are reached with them, and how practitioners work alongside other professionals.",
    leaves:[
-    {label:"Shared decision-making", refs:"1.2.7 / 4.2.4",
+    {label:"Shared decision-making", refs:"1.2.7, 4.2.4",
      items:[
-      {t:"1.2.7", d:"Collaborate with clients and relevant others in shared care planning and decision-making practices.", q:1},
-      {t:"4.2.4", d:"Create and apply effective communication strategies to educate and engage clients in informed and shared decision-making about purpose, benefits, risks, options, and costs for proposed interventions, expected outcomes, and strategies for future prevention.", q:1}],
+      {t:"Element 1.2.7", d:"Collaborate with clients and relevant others in shared care planning and decision-making practices.", q:1},
+      {t:"Element 4.2.4", d:"Create and apply effective communication strategies to educate and engage clients in informed and shared decision-making about purpose, benefits, risks, options, and costs for proposed interventions, expected outcomes, and strategies for future prevention.", q:1}],
      src:"AEP Professional Standards version 4.0"},
-    {label:"Inclusive practice", refs:"1.2.8 / 1.2.9",
+    {label:"Inclusive practice", refs:"1.2.8, 1.2.9",
      items:[
-      {t:"1.2.8", d:"Apply person-centred approaches that foster psychologically safe environments, including trauma-informed care, to ensure practices are inclusive and responsive to individual needs and experiences.", q:1},
-      {t:"1.2.9", d:"Practice in a culturally respectful manner using a strengths-based approach, which integrates cultural awareness, responsiveness, and safety and creates an inclusive environment for diverse groups including Aboriginal and Torres Strait Islander communities.", q:1}],
+      {t:"Element 1.2.8", d:"Apply person-centred approaches that foster psychologically safe environments, including trauma-informed care, to ensure practices are inclusive and responsive to individual needs and experiences.", q:1},
+      {t:"Element 1.2.9", d:"Practice in a culturally respectful manner using a strengths-based approach, which integrates cultural awareness, responsiveness, and safety and creates an inclusive environment for diverse groups including Aboriginal and Torres Strait Islander communities.", q:1}],
      src:"AEP Professional Standards version 4.0"},
-    {label:"Cultural responsiveness", refs:"1.2.9 / 1.2.5",
+    {label:"Cultural responsiveness", refs:"1.2.5, 1.2.9",
      items:[
-      {t:"1.2.5", d:"Differentiate and select verbal and non-verbal communication strategies that are contextually appropriate, culturally responsive, timely, accessible, and respectful of clients, population groups, and relevant others.", q:1},
-      {t:"Code 3.3.3", d:"take necessary steps to uphold clients' right to accessible communication options, including use of interpreting, translation or adaptive or alternative communication practices where required.", q:1},
-      {t:"Also", d:"Code clauses 5.1.1 and 5.2.3 require practice that is culturally safe and respectful for Aboriginal and Torres Strait Islander peoples."}],
+      {t:"Element 1.2.5", d:"Differentiate and select verbal and non-verbal communication strategies that are contextually appropriate, culturally responsive, timely, accessible, and respectful of clients, population groups, and relevant others.", q:1},
+      {t:"Code clause 3.3.3", d:"take necessary steps to uphold clients' right to accessible communication options, including use of interpreting, translation or adaptive or alternative communication practices where required.", q:1},
+      {t:"Code clauses 5.1.1 and 5.2.3", d:"Require practice that is culturally safe and respectful for Aboriginal and Torres Strait Islander peoples."}],
      src:"AEP Professional Standards version 4.0; Code of Professional Conduct version 5"},
-    {label:"Biopsychosocial interviewing", refs:"3.2.2", flag:"not a standard phrase",
+    {label:"Biopsychosocial history taking", refs:"3.2.2",
      items:[
-      {t:"Not in the standards", d:"The phrase biopsychosocial interviewing does not appear in any version 4.0 element.", warn:1},
-      {t:"What does cover it", d:"Element 3.2.2: Formulate safe, inclusive and effective assessments and communication strategies to collect relevant information about social and cultural determinants of the client's health, history, needs, preferences, barriers, facilitators, and goals.", q:1},
-      {t:"And", d:"The companion User Guide table lists interviewing strategies, for example contextual interviewing, to gather comprehensive biopsychosocial histories."}],
-     src:"AEP Professional Standards version 4.0 and its User Guide version 3.0"},
-    {label:"Multi-disciplinary collaboration", refs:"1.2.6 / 2.2.6",
+      {t:"Element 3.2.2", d:"Formulate safe, inclusive and effective assessments and communication strategies to collect relevant information about social and cultural determinants of the client's health, history, needs, preferences, barriers, facilitators, and goals.", q:1},
+      {t:"User Guide, example skill", d:"Names interviewing strategies, including contextual interviewing, used to gather comprehensive biopsychosocial histories."}],
+     src:"AEP Professional Standards version 4.0; User Guide version 3.0"},
+    {label:"Multidisciplinary collaboration", refs:"1.2.6, 2.2.6",
      items:[
-      {t:"1.2.6", d:"Practice collaboratively within multidisciplinary care teams, effectively seeking feedback through interactions to inform decision-making, delegation of tasks, and referrals to other professionals and services.", q:1},
-      {t:"2.2.6", d:"Examine the primary, secondary and tertiary health care environment and the roles of AEPs within established and emerging practice settings, considering multidisciplinary, interdisciplinary and transdisciplinary approaches.", q:1},
-      {t:"Worth knowing", d:"Only 18 percent of general practice cases involve a formal multidisciplinary team arrangement, and there are 26 accredited exercise physiologists available per 100 general practitioners."}],
-     src:"AEP Professional Standards version 4.0; State of Exercise Physiology Workforce 2026 executive summary"}]},
+      {t:"Element 1.2.6", d:"Practice collaboratively within multidisciplinary care teams, effectively seeking feedback through interactions to inform decision-making, delegation of tasks, and referrals to other professionals and services.", q:1},
+      {t:"Element 2.2.6", d:"Examine the primary, secondary and tertiary health care environment and the roles of AEPs within established and emerging practice settings, considering multidisciplinary, interdisciplinary and transdisciplinary approaches.", q:1},
+      {t:"Workforce context", d:"18 percent of general practice cases involve a formal multidisciplinary team arrangement, and there are 26 accredited exercise physiologists available per 100 general practitioners."}],
+     src:"AEP Professional Standards version 4.0; State of Exercise Physiology Workforce 2026"}]},
 
   {name:"Artificial intelligence and digital capability",
-   note:"The six Digital Practice Standards become part of accreditation in 2027. Artificial intelligence, notably, is governed somewhere else entirely.",
+   note:"The six Digital Practice Standards enter the accreditation framework on 1 January 2027 through element 1.2.3. Requirements governing artificial intelligence sit in the Code of Professional Conduct and in the User Guide rather than in the Standards themselves.",
    leaves:[
-    {label:"Technology integration", refs:"DPS 2 / 1.2.4",
+    {label:"Technology selection and integration", refs:"DPS 2, 1.2.4",
      items:[
-      {t:"Digital Practice Standard 2, Technology and Tools", d:"Select digital technologies based on availability, compatibility, accessibility, affordability, interoperability, ease of use, and data reliability. Enforce encryption and Australian Privacy Principles for transmission and storage, using Australian-based servers where applicable. Protect access with password protection, multi-factor authentication and passkeys."},
-      {t:"1.2.4", d:"Practice in person and via telepractice, selecting and utilising appropriate technologies, tools, and delivery modes to meet client needs and ensure effective service provision.", q:1}],
-     src:"ESSA Digital Practice Standards; AEP Professional Standards version 4.0"},
-    {label:"Data security and ethics", refs:"DPS 6 / 2.9",
+      {t:"Digital Practice Standard 2, Technology and Tools", d:"Digital technologies are selected on availability, compatibility, accessibility, affordability, interoperability, ease of use and data reliability. Encryption and the Australian Privacy Principles apply to transmission and storage, using Australian-based servers where applicable. Access is protected with password protection, multi-factor authentication and passkeys."},
+      {t:"Element 1.2.4", d:"Practice in person and via telepractice, selecting and utilising appropriate technologies, tools, and delivery modes to meet client needs and ensure effective service provision.", q:1}],
+     src:"Digital Practice Standards; AEP Professional Standards version 4.0"},
+    {label:"Data security and privacy", refs:"DPS 6, Code 2.9",
      items:[
-      {t:"Digital Practice Standard 6, Data Collection and Sharing", d:"Share client health information securely with referrers and care teams via remote electronic health record access or encrypted messaging. Obtain express consent prior to recording any digital consultation, including consent from family members or carers present. Maintain breach management procedures to assess and report unauthorised access under the Notifiable Data Breaches Scheme."},
-      {t:"Code 2.9.6", d:"ensure the use of technologies or artificial intelligence (AI) is consistent with legal requirements, occurs only with client consent, respects and upholds privacy rights, data protection and data sovereignty, and ensures the security of data.", q:1}],
-     src:"ESSA Digital Practice Standards; Code of Professional Conduct version 5"},
-    {label:"Telehealth delivery", refs:"DPS 3 and 4",
+      {t:"Digital Practice Standard 6, Data Collection and Sharing", d:"Client health information is shared with referrers and care teams through remote electronic health record access or encrypted messaging. Express consent is obtained before recording any digital consultation, including from family members or carers present. Breach management procedures assess and report unauthorised access under the Notifiable Data Breaches Scheme."},
+      {t:"Code clause 2.9.6", d:"ensure the use of technologies or artificial intelligence (AI) is consistent with legal requirements, occurs only with client consent, respects and upholds privacy rights, data protection and data sovereignty, and ensures the security of data.", q:1}],
+     src:"Digital Practice Standards; Code of Professional Conduct version 5"},
+    {label:"Telehealth and digital service delivery", refs:"DPS 1, 3, 4, 5",
      items:[
-      {t:"Digital Practice Standard 3, Assessment and Screening", d:"Verify client identity using double identifiers prior to delivering digital practice services. Assess suitability by screening risk factors, cognitive capacity, health and technology literacy, and socioeconomic and cultural determinants. Instruct clients on asynchronous monitoring tools such as wearables and mobile apps, and integrate that data into live consultations."},
-      {t:"Digital Practice Standard 4, Service Delivery", d:"Evaluate the client's physical environment for adequate floor space free from hazards, appropriate equipment, adequate lighting and audio quality. Deliver physical activity education, coaching and exercise instruction safely within established limits via live telepractice or remote platforms."},
-      {t:"Digital Practice Standard 5, Risk Management, Safety and Quality Assurance", d:"Maintain insurance coverage that explicitly covers the provision of digital services. Formulate client suitability protocols and exclusion criteria. Establish emergency protocols and procedures to manage and document emergencies and adverse events."}],
-     src:"ESSA Digital Practice Standards"},
-    {label:"Digital health literacy", refs:"3.2.7 / DPS 1.2",
+      {t:"Digital Practice Standard 1, Digital Professional Practice", d:"The purpose, benefits, risks and limitations of digital practice are explained to clients, including privacy protections and the right to withdraw or opt for in-person care. Personal and professional online presence are kept distinct. Emergency contact procedures allow clients to access support during emergencies."},
+      {t:"Digital Practice Standard 3, Assessment and Screening", d:"Client identity is verified using double identifiers before delivering digital practice services. Suitability is assessed by screening risk factors, cognitive capacity, health and technology literacy, and socioeconomic and cultural determinants. Clients are instructed on asynchronous monitoring tools such as wearables and mobile applications, and that data is integrated into live consultations."},
+      {t:"Digital Practice Standard 4, Service Delivery", d:"The client's physical environment is evaluated for adequate floor space free from hazards, appropriate equipment, adequate lighting and audio quality. Physical activity education, coaching and exercise instruction are delivered within established limits via live telepractice or remote platforms."},
+      {t:"Digital Practice Standard 5, Risk Management, Safety and Quality Assurance", d:"Insurance coverage explicitly covers the provision of digital services. Client suitability protocols and exclusion criteria are formulated. Emergency protocols and procedures manage and document emergencies and adverse events."}],
+     src:"Digital Practice Standards"},
+    {label:"Digital health literacy", refs:"3.2.7, DPS 1.2",
      items:[
-      {t:"3.2.7", d:"Develop appropriate client support strategies to facilitate engagement with AEP services across different areas of practice, and consider client needs, preferences, health and digital literacy, and factors related to accessibility.", q:1},
-      {t:"Digital Practice Standards element 1.2", d:"Communicate appropriate client and service user support strategies to facilitate digital health service delivery which considers client needs, preferences, health and digital literacy, and accessibility factors.", q:1},
-      {t:"Digital Practice Standard 1, Digital Professional Practice", d:"Explain purpose, benefits, risks and limitations of digital practice to clients, including privacy protections and their right to withdraw or opt for in-person care. Distinguish between personal and professional online presence. Develop emergency contact procedures so clients can access support during emergencies."}],
-     src:"AEP Professional Standards version 4.0; ESSA Digital Practice Standards"},
-    {label:"Artificial intelligence tools", refs:"Code 2.9.6 / 2.9.7", flag:"governed elsewhere",
+      {t:"Element 3.2.7", d:"Develop appropriate client support strategies to facilitate engagement with AEP services across different areas of practice, and consider client needs, preferences, health and digital literacy, and factors related to accessibility.", q:1},
+      {t:"Digital Practice Standards, element 1.2", d:"Communicate appropriate client and service user support strategies to facilitate digital health service delivery which considers client needs, preferences, health and digital literacy, and accessibility factors.", q:1}],
+     src:"AEP Professional Standards version 4.0; Digital Practice Standards"},
+    {label:"Artificial intelligence in practice", refs:"Code 2.9.6, 2.9.7",
      items:[
-      {t:"Where it is NOT", d:"Neither the ESSA Digital Practice Standards nor the AEP Professional Standards version 4.0 contains any mention of artificial intelligence, machine learning, algorithms, automated decision support, or AI-generated content.", warn:1},
-      {t:"Code 2.9.7, the one ESSA mandates", d:"maintain transparency and responsibly disclose when AI significantly impacts individuals.", q:1},
-      {t:"Code 2.9.6", d:"ensure the use of technologies or artificial intelligence (AI) is consistent with legal requirements, occurs only with client consent, respects and upholds privacy rights, data protection and data sovereignty, and ensures the security of data.", q:1},
-      {t:"User Guide, element 1.2.2 example skill", d:"Develop and review structured reports, especially those generated by Artificial Intelligence (AI), that summarise the client's situation, background, assessment, recommendations, and treatment plans.", q:1},
-      {t:"User Guide, element 1.2.3 example knowledge", d:"Understanding medicolegal considerations of note taking and report writing using AI. Awareness that AI tools have learned biases.", q:1},
-      {t:"User Guide, element 1.2.3 example skill", d:"Apply digital risk management and ethical decision-making frameworks when integrating AI-driven tools, for example virtual assistants, clinical decision support systems, or wearable data analytics platforms, into service delivery.", q:1},
-      {t:"User Guide, element 1.2.4 example skill", d:"Verbally narrate all aspects of a client consultation to ensure effective and appropriate use of AI in practice, such as virtual assistant note-taking tools.", q:1},
-      {t:"AES Support Guide, Table 7", d:"Identifies generative artificial intelligence as an additional information source to compare, contrast and critically analyse, never a substitute for traditional research sources. Requires awareness of and avoidance of biases in AI or computer algorithms."}],
-     src:"Code of Professional Conduct version 5; AEP Professional Standards User Guide version 3.0; AES Professional Standards Support Guide"}]},
+      {t:"Where the requirements sit", d:"Artificial intelligence is governed by the Code of Professional Conduct and by worked examples in the User Guide and the AES Support Guide. The Professional Standards version 4.0 and the Digital Practice Standards address digital practice without addressing artificial intelligence specifically."},
+      {t:"Code clause 2.9.6, conditions of use", d:"ensure the use of technologies or artificial intelligence (AI) is consistent with legal requirements, occurs only with client consent, respects and upholds privacy rights, data protection and data sovereignty, and ensures the security of data.", q:1},
+      {t:"Code clause 2.9.7, disclosure", d:"maintain transparency and responsibly disclose when AI significantly impacts individuals.", q:1},
+      {t:"User Guide, element 1.2.2, example skill", d:"Develop and review structured reports, especially those generated by Artificial Intelligence (AI), that summarise the client's situation, background, assessment, recommendations, and treatment plans.", q:1},
+      {t:"User Guide, element 1.2.3, example knowledge", d:"Understanding medicolegal considerations of note taking and report writing using AI. Awareness that AI tools have learned biases.", q:1},
+      {t:"User Guide, element 1.2.3, example skill", d:"Apply digital risk management and ethical decision-making frameworks when integrating AI-driven tools, for example virtual assistants, clinical decision support systems, or wearable data analytics platforms, into service delivery.", q:1},
+      {t:"User Guide, element 1.2.4, example skill", d:"Verbally narrate all aspects of a client consultation to ensure effective and appropriate use of AI in practice, such as virtual assistant note-taking tools.", q:1},
+      {t:"AES Support Guide, Table 7", d:"Identifies generative artificial intelligence as an additional information source to compare, contrast and critically analyse, rather than a substitute for traditional research sources, and requires awareness and avoidance of biases in artificial intelligence or computer algorithms."}],
+     src:"Code of Professional Conduct version 5; User Guide version 3.0; AES Support Guide"}]},
 
   {name:"Judgement and scope",
-   note:"Knowing where your competence ends is a competency in its own right, and the standards treat it as one.",
+   note:"Elements governing the limits of individual practice, the assessment and management of risk, referral, and practitioner wellbeing.",
    leaves:[
-    {label:"Top of scope practice", refs:"1.2.1 / 3.2.8", flag:"not a standard phrase",
+    {label:"Scope of practice", refs:"1.2.1, 3.2.8",
      items:[
-      {t:"Not in the standards", d:"The phrase top of scope practice does not appear verbatim in any version 4.0 element. It is discussed in the review background and the Needs Analysis.", warn:1},
-      {t:"What governs it", d:"Element 1.2.1, practise within the AEP and individual scopes of practice, and element 3.2.8, distinguish when client needs are outside of scope or competence and take appropriate, timely action to effectively engage or refer to other professionals."}],
-     src:"AEP Professional Standards version 4.0; AEP standards needs analysis"},
-    {label:"Diagnostic assessments", refs:"3.2.3",
+      {t:"Element 1.2.1", d:"Practice within the AEP and individual scopes of practice, ESSA Code of Professional Conduct and Ethical Practice, and other legislation, regulations, and standards.", q:1},
+      {t:"Element 3.2.8", d:"Distinguish when client needs are outside of scope or competence and take appropriate, timely action to effectively engage or refer to other professionals.", q:1},
+      {t:"Two scopes, not one", d:"Profession scope is what an Accredited Exercise Physiologist may do. Individual scope is what a given practitioner's training and experience support. Practice is bounded by whichever is narrower."}],
+     src:"AEP Professional Standards version 4.0"},
+    {label:"Assessment and outcome measurement", refs:"3.2.3",
      items:[
-      {t:"3.2.3", d:"Formulate appropriate assessments and outcome measures relevant to client presentations and referrals, which evaluate health status, fitness, function, and capacity to inform clinical reasoning and to monitor the progress and outcomes of interventions.", q:1},
-      {t:"The boundary", d:"An Accredited Exercise Physiologist cannot provide medical or diagnostic diagnoses, such as pathology or medical imaging diagnoses."}],
+      {t:"Element 3.2.3", d:"Formulate appropriate assessments and outcome measures relevant to client presentations and referrals, which evaluate health status, fitness, function, and capacity to inform clinical reasoning and to monitor the progress and outcomes of interventions.", q:1},
+      {t:"Boundary", d:"An Accredited Exercise Physiologist cannot provide medical or diagnostic diagnoses, such as pathology or medical imaging diagnoses."}],
      src:"AEP Professional Standards version 4.0; AEP scope"},
     {label:"Risk stratification", refs:"3.2.1",
      items:[
-      {t:"3.2.1", d:"Apply appropriate screening processes, including infection control, to evaluate, stratify, and manage risk for participation in assessments and interventions with consideration for the full health spectrum.", q:1}],
+      {t:"Element 3.2.1", d:"Apply appropriate screening processes, including infection control, to evaluate, stratify, and manage risk for participation in assessments and interventions with consideration for the full health spectrum.", q:1}],
      src:"AEP Professional Standards version 4.0"},
-    {label:"Referral pathways", refs:"1.2.6 / 3.2.8",
+    {label:"Referral and delegation", refs:"1.2.6, 3.2.8",
      items:[
-      {t:"3.2.8", d:"Distinguish when client needs are outside of scope or competence and take appropriate, timely action to effectively engage or refer to other professionals.", q:1},
-      {t:"1.2.6", d:"Practice collaboratively within multidisciplinary care teams, effectively seeking feedback through interactions to inform decision-making, delegation of tasks, and referrals to other professionals and services.", q:1}],
+      {t:"Element 3.2.8", d:"Distinguish when client needs are outside of scope or competence and take appropriate, timely action to effectively engage or refer to other professionals.", q:1},
+      {t:"Element 1.2.6", d:"Practice collaboratively within multidisciplinary care teams, effectively seeking feedback through interactions to inform decision-making, delegation of tasks, and referrals to other professionals and services.", q:1}],
      src:"AEP Professional Standards version 4.0"},
-    {label:"Practitioner self-care", refs:"1.2.12",
+    {label:"Practitioner wellbeing", refs:"1.2.12",
      items:[
-      {t:"1.2.12", d:"Evaluate and self-monitor the impact that practitioner stress, compassion fatigue, bereavement, and operating in high-risk work settings has on physical and mental health and identify appropriate steps to ensure safe and professional practice.", q:1},
-      {t:"Worth noticing", d:"Your own wellbeing is a named element of the standards you are assessed against, not an afterthought to them."}],
+      {t:"Element 1.2.12", d:"Evaluate and self-monitor the impact that practitioner stress, compassion fatigue, bereavement, and operating in high-risk work settings has on physical and mental health and identify appropriate steps to ensure safe and professional practice.", q:1}],
      src:"AEP Professional Standards version 4.0"}]},
 
-  {name:"Human-centric care",
-   note:"The part of the work a tool cannot take. Two of these five are the map's own words rather than the regulator's, and that is worth knowing.",
+  {name:"Clinical reasoning and the therapeutic relationship",
+   note:"Elements governing reasoning across complex presentations, person-centred care, and the oversight a practitioner retains over automated tools.",
    leaves:[
-    {label:"Complex clinical reasoning", refs:"3.2.3 / 2.2.1 / 4.2.2", flag:"not a standard phrase",
+    {label:"Clinical reasoning", refs:"2.2.1, 3.2.3, 4.2.2",
      items:[
-      {t:"Not verbatim", d:"The exact phrase complex clinical reasoning does not appear in a single version 4.0 element.", warn:1},
-      {t:"3.2.3 covers the reasoning", d:"Formulate appropriate assessments and outcome measures relevant to client presentations and referrals, which evaluate health status, fitness, function, and capacity to inform clinical reasoning.", q:1},
-      {t:"4.2.2 covers the complexity", d:"Deliver, monitor and adapt safe and effective movement, physical activity, and exercise-based interventions for clients with complex presentations, including those with acute, sub-acute, chronic health conditions and multi-morbidity.", q:1}],
+      {t:"Element 2.2.1", d:"Apply integrated knowledge of anatomy, physiology, pathophysiology, biomechanics, and behaviour change to inform clinical decision making and person-centred care approaches.", q:1},
+      {t:"Element 3.2.3", d:"Formulate appropriate assessments and outcome measures relevant to client presentations and referrals, which evaluate health status, fitness, function, and capacity to inform clinical reasoning and to monitor the progress and outcomes of interventions.", q:1},
+      {t:"Element 4.2.2", d:"Deliver, monitor and adapt safe and effective movement, physical activity, and exercise-based interventions for clients with complex presentations, including those with acute, sub-acute, chronic health conditions and multi-morbidity.", q:1}],
      src:"AEP Professional Standards version 4.0"},
-    {label:"Person-centred approaches", refs:"1.2.8 / 2.2.1",
+    {label:"Person-centred care", refs:"1.2.8, 2.2.1",
      items:[
-      {t:"1.2.8", d:"Apply person-centred approaches that foster psychologically safe environments, including trauma-informed care, to ensure practices are inclusive and responsive to individual needs and experiences.", q:1},
-      {t:"2.2.1", d:"Apply integrated knowledge of anatomy, physiology, pathophysiology, biomechanics, and behaviour change to inform clinical decision making and person-centred care approaches.", q:1}],
+      {t:"Element 1.2.8", d:"Apply person-centred approaches that foster psychologically safe environments, including trauma-informed care, to ensure practices are inclusive and responsive to individual needs and experiences.", q:1},
+      {t:"Element 2.2.1", d:"Apply integrated knowledge of anatomy, physiology, pathophysiology, biomechanics, and behaviour change to inform clinical decision making and person-centred care approaches.", q:1}],
      src:"AEP Professional Standards version 4.0"},
-    {label:"Empathy and connection", refs:"User Guide 1.2.8", flag:"partly the map's words",
+    {label:"Empathy and respectful communication", refs:"User Guide 1.2.8",
      items:[
-      {t:"Empathy is there", d:"The User Guide, Table 2 under element 1.2.8, names empathy and empathetic, respectful, and non-stigmatising communication as core to person-centred care."},
-      {t:"Human connection is not", d:"The exact phrase human connection does not appear verbatim in any standard element or code clause.", warn:1}],
-     src:"AEP Professional Standards User Guide version 3.0"},
-    {label:"Non-automated interventions", refs:"no such rule", flag:"not in the sources",
+      {t:"User Guide, Table 2, element 1.2.8", d:"Names empathy, and empathetic, respectful and non-stigmatising communication, as core to person-centred care."},
+      {t:"Element 1.2.5", d:"Differentiate and select verbal and non-verbal communication strategies that are contextually appropriate, culturally responsive, timely, accessible, and respectful of clients, population groups, and relevant others.", q:1}],
+     src:"AEP Professional Standards version 4.0; User Guide version 3.0"},
+    {label:"Human oversight of automated tools", refs:"1.2.6, Code 2.9.7",
      items:[
-      {t:"There is no list", d:"The source documents contain no element or clause specifying interventions that must not be automated or delegated to a tool.", warn:1},
-      {t:"What does exist", d:"User Guide element 1.2.2 requires human review of reports generated by artificial intelligence, and Code clause 4.2.3 governs delegation of tasks. Neither is a prohibitive list."},
-      {t:"How to use this", d:"Treat it as a teaching position rather than a regulatory one, and say which it is when you teach it."}],
-     src:"AEP Professional Standards User Guide version 3.0; Code of Professional Conduct version 5"},
-    {label:"Evidence-informed adaptation", refs:"4.2.3 / 4.2.8 / 2.2.5",
+      {t:"User Guide, element 1.2.2, example skill", d:"Develop and review structured reports, especially those generated by Artificial Intelligence (AI), that summarise the client's situation, background, assessment, recommendations, and treatment plans.", q:1},
+      {t:"Element 1.2.6", d:"Names delegation of tasks as a decision the practitioner makes within a multidisciplinary care team, informed by feedback sought through interactions."},
+      {t:"Code clause 2.9.7", d:"maintain transparency and responsibly disclose when AI significantly impacts individuals.", q:1}],
+     src:"AEP Professional Standards version 4.0; User Guide version 3.0; Code of Professional Conduct version 5"},
+    {label:"Evidence-informed adaptation", refs:"2.2.5, 4.2.3, 4.2.8",
      items:[
-      {t:"4.2.3", d:"Formulate and apply strategies to manage risk, evaluate progress, and adapt recommendations and interventions based on needs and measured outcomes.", q:1},
-      {t:"4.2.8", d:"Evaluate and adapt practice and service delivery through participation in periodic evidence-based service improvement processes.", q:1},
-      {t:"2.2.5", d:"Analyse research findings to develop evidence-informed and safe recommendations and exercise interventions.", q:1}],
+      {t:"Element 2.2.5", d:"Analyse research findings to develop evidence-informed and safe recommendations and exercise interventions.", q:1},
+      {t:"Element 4.2.3", d:"Formulate and apply strategies to manage risk, evaluate progress, and adapt recommendations and interventions based on needs and measured outcomes.", q:1},
+      {t:"Element 4.2.8", d:"Evaluate and adapt practice and service delivery through participation in periodic evidence-based service improvement processes.", q:1}],
      src:"AEP Professional Standards version 4.0"}]}
 ]}
 ];
 
+/* ---------------------------------------------------------------- sources */
+const srcList = document.getElementById("sources");
+for (const s of SOURCES) {
+  const li = document.createElement("li");
+  if (s.url) {
+    const a = document.createElement("a");
+    a.href = s.url; a.textContent = s.n;
+    a.rel = "noopener"; a.target = "_blank";
+    li.appendChild(a);
+  } else {
+    const b = document.createElement("span");
+    b.style.fontWeight = "500"; b.textContent = s.n;
+    li.appendChild(b);
+  }
+  const p = document.createElement("span");
+  p.className = "pub"; p.textContent = ". " + s.pub.replace(/\.$/, "") + ".";
+  li.appendChild(p);
+  srcList.appendChild(li);
+}
+
+/* ------------------------------------------------------------------- map */
 const map = document.getElementById("map");
 let leafCount = 0;
 
@@ -541,19 +554,15 @@ for (const part of DATA) {
       head.setAttribute("aria-controls", id);
       head.innerHTML =
         '<span class="caret" aria-hidden="true">&#9656;</span>' +
-        '<span class="label"></span>' +
-        (lf.flag ? '<span class="chip"></span>' : '') +
-        '<span class="refs"></span>';
+        '<span class="label"></span><span class="refs"></span>';
       head.querySelector(".label").textContent = lf.label;
       head.querySelector(".refs").textContent = lf.refs || "";
-      if (lf.flag) head.querySelector(".chip").textContent = lf.flag;
 
       const det = document.createElement("div");
       det.className = "detail"; det.id = id; det.hidden = true;
       const dl = document.createElement("dl");
       for (const it of lf.items) {
-        const box = document.createElement("div");
-        box.className = "item" + (it.warn ? " warn" : "");
+        const box = document.createElement("div"); box.className = "item";
         const dt = document.createElement("dt"); dt.textContent = it.t;
         const dd = document.createElement("dd");
         dd.className = it.q ? "quote" : "";
@@ -572,7 +581,7 @@ for (const part of DATA) {
       });
 
       leaf.append(head, det);
-      leaf.dataset.text = (lf.label + " " + (lf.refs||"") + " " + (lf.flag||"") + " " +
+      leaf.dataset.text = (lf.label + " " + (lf.refs||"") + " " +
         lf.items.map(i => i.t + " " + i.d).join(" ") + " " + (lf.src||"")).toLowerCase();
       wrap.appendChild(leaf);
     }
